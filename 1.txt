@@ -1,0 +1,14 @@
+1. 新建一个工程
+$express -e blog  （-e 表示使用ejs模板， -j表示使用jade模板）
+$cd blog 并npm install 安装npm依赖
+$DEBUG=blog node ./bin/www （这是debug模式 ） 或者可以使用$npm start启动项目
+
+app.js: 项目启动文件，入口文件
+package.json:存储工程的信息及依赖模块，当在dependencies中添加依赖的模块时，运行npm install, npm会检查当前目录下的package.json, 并自动安装所有的指定的模块，相当于maven中的pom.xml
+node_modules:存放package中安装的模块。
+public:存放image/css/js等文件
+routes:存放路由文件
+views:存放视图文件或者说模板文件
+bin:存放可执行的文件
+
+2.未完待续
